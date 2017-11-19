@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:hc="/hahnCompLib">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:panelStretchLayout topHeight="50px" id="psl1">
+          <f:facet name="top"/>
+          <f:facet name="center">
+            <af:panelGroupLayout layout="scroll" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="pgl2">
+              <af:panelGroupLayout id="pgl1">
+                <af:inputText label="New Messages" id="it1" value="#{bindings.myNewMessageCount1.inputValue}" autoSubmit="true"/>
+                <af:panelGroupLayout id="pgl0" partialTriggers="it1">
+                  <hc:BadgeButtonComponentDef badgeText="#{bindings.myNewMessageCount1.inputValue}" label="rrrr" id="bbcd1"
+                                              baListener="#{BadgeButtonBean.onBadgeButton}" baAcion="#{BadgeButtonBean.onBadgeButtonAction}"/>
+                </af:panelGroupLayout>
+              </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <!-- id="af_one_column_header_stretched"  -->
+          </f:facet>
+        </af:panelStretchLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

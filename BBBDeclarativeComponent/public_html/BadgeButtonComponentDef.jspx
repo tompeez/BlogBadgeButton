@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <af:componentDef var="attrs" componentVar="component">
+    <af:resource type="css">
+        .badge {
+        background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:    -moz-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:     -ms-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:      -o-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background: -webkit-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background-color: red;
+        border: 2px solid white;
+        border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+        box-shadow: 1px 1px 1px black;
+        color: white;
+        font: bold 15px/13px Helvetica, Verdana, Tahoma;
+        height: 16px; 
+        padding: 4px 3px 0 3px;
+        text-align: center;
+        min-width: 14px;
+        margin: 0px 0px 20px -10px;
+        position: relative;
+    }
+    </af:resource>
+    <af:panelGroupLayout id="pgl1" layout="horizontal">
+            <af:commandButton text="#{attrs.label}" id="cb1" shortDesc="55" partialSubmit="false" actionListener="#{component.handleBaListener}"
+                              action="#{component.handleBaAcion}"/>
+            <af:outputText value="&lt;div class='badge'>#{attrs.badgeText}&lt;/div>" id="ot1" partialTriggers="cb1" escape="false"/>
+    </af:panelGroupLayout>
+    <af:xmlContent>
+      <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+        <display-name>BadgeButtonComponentDef</display-name>
+        <attribute>
+          <attribute-name>label</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+          <required>false</required>
+        </attribute>
+        <attribute>
+          <attribute-name>badgeText</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+          <required>true</required>
+        </attribute>
+        <component-extension>
+          <component-tag-namespace>de.hahn.blog.component</component-tag-namespace>
+          <component-taglib-uri>/hahnCompLib</component-taglib-uri>
+          <method-attribute>
+            <attribute-name>
+              baListener
+            </attribute-name>
+            <method-signature>
+              void method(javax.faces.event.ActionEvent)
+            </method-signature>
+            <required>
+              false
+            </required>
+          </method-attribute>
+          <method-attribute>
+            <attribute-name>
+              baAcion
+            </attribute-name>
+            <method-signature>
+              java.lang.String method()
+            </method-signature>
+          </method-attribute>
+        </component-extension>
+      </component>
+    </af:xmlContent>
+  </af:componentDef>
+</jsp:root>
