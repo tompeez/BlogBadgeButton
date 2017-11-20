@@ -55,6 +55,15 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
    <value n="defaultPackage" v="de.hahn.blog.badgebutton.view"/>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList">
+         <hash>
+            <value n="class" v="oracle.jdeveloper.library.ProjectLibrary"/>
+            <url n="sourceOwnerURL" path="../BlogBadgeButton.jws"/>
+            <url n="sourceURL" path="../BBBDeclarativeComponent/BBBDeclarativeComponent.jpr"/>
+         </hash>
+      </list>
+   </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="HTML"/>
@@ -244,7 +253,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../../../jdev/jdev_system/11.1.1.9.0/system11.1.1.9.40.66.73/o.jdeveloper/ButtonBadge.library"/>
+            <value n="id" v="ADF Library"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -264,6 +273,21 @@
                </list>
                <value n="description" v="Library1"/>
                <value n="id" v="Library1"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../BBBDeclarativeComponent/deploy/BBBcomponent.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="ADF Library"/>
+               <value n="id" v="ADF Library"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../BBBDeclarativeComponent/deploy/BBBcomponent.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="Library2"/>
+               <value n="id" v="Library2"/>
             </hash>
          </list>
       </hash>
@@ -341,7 +365,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../../../jdev/jdev_system/11.1.1.9.0/system11.1.1.9.40.66.73/o.jdeveloper/ButtonBadge.library"/>
+            <value n="id" v="ADF Library"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -356,6 +380,21 @@
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.jsp.JspVeProjectSettings">
+      <list n="filters">
+         <string v="trinidad"/>
+      </list>
+      <list n="servlet_listeners">
+         <string v="com.sun.faces.config.ConfigureListener"/>
+      </list>
+      <list n="servlet_listeners_unselected">
+         <string v="oracle.adf.mbean.share.config.ADFConfigLifeCycleCallBack"/>
+      </list>
+      <list n="servlets">
+         <string v="Faces Servlet"/>
+         <string v="resources"/>
+      </list>
    </hash>
    <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">
       <list n="tag-libraries">
@@ -393,6 +432,17 @@
             <value n="version" v="11"/>
          </hash>
          <hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="libraries" v="hahnComp 1.0 Tag Libraries"/>
+            <value n="name" v="hahnComp"/>
+            <value n="prefix" v="hc"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="tldURL" v="@project@../BBBDeclarativeComponent/deploy/BBBcomponent.jar!/META-INF/hahnComp.tld"/>
+            <value n="URI" v="/hahnCompLib"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
             <hash n="baseLibrary">
                <value n="name" v="ADF Data Visualization"/>
                <value n="version" v="1.1"/>
@@ -402,17 +452,6 @@
             <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view_11.1.1/dvt-faces.jar!/META-INF/bi.tld"/>
             <value n="URI" v="http://xmlns.oracle.com/dss/adf/faces"/>
             <value n="version" v="1.1"/>
-         </hash>
-         <hash>
-            <value n="jspVersion" v="2.1"/>
-            <value n="libraries" v="hahnComp 1.0 Tag Libraries"/>
-            <value n="name" v="hahnComp"/>
-            <value n="prefix" v="hc"/>
-            <value n="runInEditor" v="true"/>
-            <value n="showInPalette" v="true"/>
-            <value n="tldURL" v="@project@../BBBDeclarativeComponent/deploy/componentBBB.jar!/META-INF/hahnComp.tld"/>
-            <value n="URI" v="/hahnCompLib"/>
-            <value n="version" v="1.0"/>
          </hash>
       </list>
    </hash>

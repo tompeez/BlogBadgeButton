@@ -85,7 +85,10 @@
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
          <hash n="componentBBB">
-            <value n="adflib-connectionDetails" v="true"/>
+            <value n="adflib-connectionDetails" v="false"/>
+            <list n="adflib-excludedConnections">
+               <string v="|"/>
+            </list>
             <value n="adflib-nonReusablesError" v="false"/>
             <hash n="archiveOptions">
                <value n="hasManifest" v="true"/>
@@ -110,7 +113,7 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/componentBBB.jar"/>
+            <url n="jarURL" path="deploy/BBBcomponent.jar"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
