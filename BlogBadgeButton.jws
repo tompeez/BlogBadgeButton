@@ -19,6 +19,7 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="BBB/BBB.jpr"/></hash>
       <hash><url n="URL" path="BBBDeclarativeComponent/BBBDeclarativeComponent.jpr"/></hash>
+      <hash><url n="URL" path="BBBDeclComp/BBBDeclComp.jpr"/></hash>
       <hash><url n="URL" path="BBBViewController/BBBViewController.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
@@ -41,6 +42,11 @@
                      <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
                      <url n="ownerURL" path="BBBDeclarativeComponent/BBBDeclarativeComponent.jpr"/>
                      <value n="profileName" v="BlogBadgeButton_BBBDeclarativeComponent_webapp1"/>
+                  </hash>
+                  <hash>
+                     <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
+                     <url n="ownerURL" path="BBBDeclComp/BBBDeclComp.jpr"/>
+                     <value n="profileName" v="BlogBadgeButton_BBBDeclComp_webapp1"/>
                   </hash>
                </list>
             </hash>

@@ -31,7 +31,7 @@
     </af:panelGroupLayout>
     <af:xmlContent>
       <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
-        <display-name>BadgeButtonComponentDef</display-name>
+        <display-name>badgeButton</display-name>
         <attribute>
           <attribute-name>label</attribute-name>
           <attribute-class>java.lang.String</attribute-class>

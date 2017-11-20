@@ -14,7 +14,7 @@
               <af:panelGroupLayout id="pgl1">
                 <af:inputText label="New Messages" id="it1" value="#{bindings.myNewMessageCount1.inputValue}" autoSubmit="true"/>
                 <af:panelGroupLayout id="pgl0" partialTriggers="it1">
-                  <hc:BadgeButtonComponentDef badgeText="#{bindings.myNewMessageCount1.inputValue}" label="rrrr" id="bbcd1"
+                  <hc:badgeButton badgeText="#{bindings.myNewMessageCount1.inputValue}" label="rrrr" id="bbcd1"
                                               baListener="#{BadgeButtonBean.onBadgeButton}" baAcion="#{BadgeButtonBean.onBadgeButtonAction}"/>
                 </af:panelGroupLayout>
               </af:panelGroupLayout>
