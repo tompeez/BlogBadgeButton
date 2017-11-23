@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:resource type="css">
+        .badge {
+        background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:    -moz-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:     -ms-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:      -o-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background: -webkit-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background-color: red;
+        border: 2px solid white;
+        border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+        box-shadow: 1px 1px 1px black;
+        color: white;
+        font: bold 15px/13px Helvetica, Verdana, Tahoma;
+        height: 16px; 
+        padding: 4px 3px 0 3px;
+        text-align: center;
+        min-width: 14px;
+        margin: 0px 0px 20px -10px;
+        position: relative;
+    }
+    </af:resource>
+    <af:form id="f1">
+        <af:panelStretchLayout topHeight="50px" id="psl1">
+          <f:facet name="top"/>
+          <f:facet name="center">
+            <af:panelGroupLayout id="pgl0" layout="horizontal">
+              <af:spacer width="10" height="10" id="s1"/>
+              <af:outputText value="&lt;div class='badge'>xyz&lt;/div>" id="ot1"
+                           escape="false"/>
+            </af:panelGroupLayout>
+            <!-- id="af_one_column_header_stretched"  -->
+          </f:facet>
+        </af:panelStretchLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

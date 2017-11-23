@@ -13,8 +13,9 @@
             <af:panelGroupLayout layout="scroll" id="pgl2">
               <af:panelGroupLayout id="pgl1">
                 <af:inputText label="New Messages" id="it1" value="#{bindings.myNewMessageCount1.inputValue}" autoSubmit="true"/>
+                <af:spacer width="10" height="20" id="s1"/>
                 <af:panelGroupLayout id="pgl0" partialTriggers="it1">
-                  <hc:badgeButton badgeText="#{bindings.myNewMessageCount1.inputValue}" label="rrrr" id="bbcd1"
+                  <hc:badgeButton badgeText="#{bindings.myNewMessageCount1.inputValue}" label="New Actions" id="bbcd1"
                                               baListener="#{BadgeButtonBean.onBadgeButton}" baAcion="#{BadgeButtonBean.onBadgeButtonAction}"/>
                 </af:panelGroupLayout>
               </af:panelGroupLayout>
