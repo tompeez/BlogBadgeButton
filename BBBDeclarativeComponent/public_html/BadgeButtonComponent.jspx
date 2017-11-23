@@ -26,7 +26,7 @@
     </af:resource>
     <af:panelGroupLayout id="pgl1" layout="horizontal">
             <af:commandButton text="#{attrs.label}" id="cb1" shortDesc="55" partialSubmit="false" actionListener="#{component.handleBaListener}"
-                              action="#{component.handleBaAcion}"/>
+                              action="#{component.handleBaAction}"/>
             <af:outputText value="&lt;div class='badge'>#{attrs.badgeText}&lt;/div>" id="ot1" partialTriggers="cb1" escape="false"/>
     </af:panelGroupLayout>
     <af:xmlContent>
@@ -58,7 +58,7 @@
           </method-attribute>
           <method-attribute>
             <attribute-name>
-              baAcion
+              baAction
             </attribute-name>
             <method-signature>
               java.lang.String method()
