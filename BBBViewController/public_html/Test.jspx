@@ -16,7 +16,7 @@
                 <af:spacer width="10" height="20" id="s1"/>
                 <af:panelGroupLayout id="pgl0" partialTriggers="it1">
                   <hc:badgeButton badgeText="#{bindings.myNewMessageCount1.inputValue}" label="New Actions" id="bbcd1"
-                                              baListener="#{BadgeButtonBean.onBadgeButton}" baAcion="#{BadgeButtonBean.onBadgeButtonAction}"/>
+                                              baListener="#{BadgeButtonBean.onBadgeButton}" baAction="#{BadgeButtonBean.onBadgeButtonAction}"/>
                 </af:panelGroupLayout>
               </af:panelGroupLayout>
             </af:panelGroupLayout>

@@ -19,7 +19,6 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="BBB/BBB.jpr"/></hash>
       <hash><url n="URL" path="BBBDeclarativeComponent/BBBDeclarativeComponent.jpr"/></hash>
-      <hash><url n="URL" path="BBBDeclComp/BBBDeclComp.jpr"/></hash>
       <hash><url n="URL" path="BBBViewController/BBBViewController.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
