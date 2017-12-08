@@ -15,7 +15,6 @@ public class BadgeButtonBean {
             
     }
 
-
     public String onBadgeButtonAction() {
         logger.info("Test5!");
         return null;
