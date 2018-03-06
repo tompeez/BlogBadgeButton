@@ -4,8 +4,11 @@
              ClientType="Generic">
   <pageMap>
     <page path="/Test.jspx" usageId="de_hahn_blog_badgebutton_view_TestPageDef"/>
+    <page path="/Test12c.jsf" usageId="de_hahn_blog_badgebutton_view_Test12cPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="de_hahn_blog_badgebutton_view_TestPageDef" path="de.hahn.blog.badgebutton.view.pageDefs.TestPageDef"/>
+    <page id="de_hahn_blog_badgebutton_view_Test12cPageDef"
+          path="de.hahn.blog.badgebutton.view.pageDefs.Test12cPageDef"/>
   </pageDefinitionUsages>
 </Application>

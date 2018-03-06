@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="compButton"
+                 definition="public"
+                 xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>BadgeButton12c</afc:display-name>
+            <afc:attribute>
+                <afc:attribute-name>label</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>badgeText</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:component-extension>
+                <afc:component-tag-namespace>de.hahn.blog.component12c</afc:component-tag-namespace>
+                <afc:component-taglib-uri>/hahnCompLib12c</afc:component-taglib-uri>
+                <afc:method-attribute>
+                    <afc:attribute-name>baActionListener</afc:attribute-name>
+                    <afc:method-signature>void method(javax.faces.event.ActionEvent)</afc:method-signature>
+                </afc:method-attribute>
+                <afc:method-attribute>
+                    <afc:attribute-name>baAction</afc:attribute-name>
+                    <afc:method-signature>java.lang.String method()</afc:method-signature>
+                </afc:method-attribute>
+            </afc:component-extension>
+        </afc:component>
+    </af:xmlContent>
+    <af:resource type="css">
+        .badge {
+        background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:    -moz-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:     -ms-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background:      -o-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+            background: -webkit-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background-color: red;
+        border: 2px solid white;
+        border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+        box-shadow: 1px 1px 1px black;
+        color: white;
+        font: bold 15px/13px Helvetica, Verdana, Tahoma;
+        height: 16px; 
+        padding: 4px 3px 0 3px;
+        text-align: center;
+        min-width: 14px;
+        margin: 0px 0px 20px -10px;
+        position: relative;
+    }
+    </af:resource>
+    <af:panelGroupLayout id="pgl1" layout="horizontal">
+        <af:button text="#{attrs.label}" id="cb1" shortDesc="55" partialSubmit="false"
+                   actionListener="#{compButton.handleBaActionListener}"
+                              action="#{compButton.handleBaAction}"/>
+            <af:outputText value="&lt;div class='badge'>#{attrs.badgeText}&lt;/div>" id="ot1" partialTriggers="cb1" escape="false"/>
+    </af:panelGroupLayout>
+</af:componentDef>

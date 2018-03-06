@@ -6,6 +6,9 @@
   <view id="ugly">
     <page>/ugly.jspx</page>
   </view>
+  <view id="Test12c">
+    <page>/Test12c.jsf</page>
+  </view>
   <managed-bean id="__4">
     <managed-bean-name id="__1">BadgeButtonBean</managed-bean-name>
     <managed-bean-class id="__3">de.hahn.blog.badgebutton.BadgeButtonBean</managed-bean-class>
