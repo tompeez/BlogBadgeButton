@@ -2,7 +2,7 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
   <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-  <af:componentDef var="attrs" componentVar="component">
+  <af:componentDef var="attrs" componentVar="compButton">
     <af:resource type="css">
         .badge {
         background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
@@ -25,8 +25,8 @@
     }
     </af:resource>
     <af:panelGroupLayout id="pgl1" layout="horizontal">
-            <af:commandButton text="#{attrs.label}" id="cb1" shortDesc="55" partialSubmit="false" actionListener="#{component.handleBaListener}"
-                              action="#{component.handleBaAction}"/>
+            <af:commandButton text="#{attrs.label}" id="cb1" shortDesc="55" partialSubmit="false" actionListener="#{compButton.handleBaListener}"
+                              action="#{compButton.handleBaAction}"/>
             <af:outputText value="&lt;div class='badge'>#{attrs.badgeText}&lt;/div>" id="ot1" partialTriggers="cb1" escape="false"/>
     </af:panelGroupLayout>
     <af:xmlContent>
