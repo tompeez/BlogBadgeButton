@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:hc12c="/hahnCompLib12c">
+    <af:document title="Test12c.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Header -->
+                        <af:outputText value="Badge Button Test 12c" id="ot1" inlineStyle="font-size:x-large;"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <af:panelGroupLayout id="pgl3" layout="vertical">
+                            <af:spacer width="10" height="10" id="s2"/>
+                            <af:inputText label="New Messages" id="it1"
+                                          value="#{bindings.myNewMessageCount1.inputValue}" autoSubmit="true"/>
+                            <af:spacer width="10" height="20" id="s1"/>
+                            <af:panelGroupLayout id="pgl0" partialTriggers="it1">
+                                <hc12c:BadgeButton12c badgeText="#{bindings.myNewMessageCount1.inputValue}"
+                                                      label="New Actions" id="bbcd1"
+                                                      baAction="#{BadgeButtonBean.onBadgeButtonAction}"
+                                                      baActionListener="#{BadgeButtonBean.onBadgeButton}"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

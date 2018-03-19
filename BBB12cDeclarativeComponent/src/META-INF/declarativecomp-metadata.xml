@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<declarativeCompDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/declarativecomp">
+  <declarativecomp-jsp-ui-def>/BadgeButton12c.jsf</declarativecomp-jsp-ui-def>
+  <declarativecomp-taglib>
+    <taglib-name>hahnCompLib12c</taglib-name>
+    <taglib-uri>/hahnCompLib12c</taglib-uri>
+    <taglib-prefix>hc12c</taglib-prefix>
+  </declarativecomp-taglib>
+</declarativeCompDefs>
